@@ -53,7 +53,7 @@ nav * {
   display: inline-block;
   width: 50%;
   margin-top: 100px;
-  bottom: 0;
+  bottom: 25%;
   transform: translate(0, -50%);
 }
 .titolo-pagina h1 {
@@ -65,16 +65,26 @@ nav * {
   border-radius: 5px;
   padding: 10px;
   color: white;
-  background-color: lightgreen;
+  background-color: #7cbb02;
 }
 .bottone-verde a, nav a {
   text-decoration: none;
   color: white;
 }
 .intestazione {
+  position: relative;
   text-align: center;
   height: 100px;
-  background-color: grey;
+  background-color: #d3d3d3;
+}
+.intestazione div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.intestazione span  {
+  color: #8e8e8e;
 }
 .row {
   border-bottom: 2px solid black;
