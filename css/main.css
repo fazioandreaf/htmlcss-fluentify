@@ -16,7 +16,7 @@ header {
   background-color: #0c325a;
   background-image: url(../img/background-header.png);
   background-size: 50%;
-  background-position: right bottom;
+  background-position: 110% 110%;
   background-repeat: no-repeat;
 }
 header a {
@@ -92,7 +92,7 @@ nav ul li {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.intestazione span, .carta hr, .carta span, main section:last-child div span {
+.intestazione span, .carta hr, .carta span, main section:last-child div span, .pulsanti-footer {
   color: #8e8e8e;
 }
 .row {
@@ -146,13 +146,22 @@ footer {
   display: table;
   clear: both;
 }
-.first-footer-row span {
+.first-footer-row>span {
   font-size: 2em;
   font-weight: bold;
   float:left;
 }
 .pulsanti-footer {
   float:right;
+  padding-top: 10px;
+}
+.pulsanti-footer>span {
+  margin: 0 10px;
+  padding-right: 1px;
+  border-bottom: 1px solid ;
+}
+.pulsanti-footer>span::after {
+  content:'\02C5'
 }
 .pulsanti-footer a {
   text-decoration: none;
@@ -162,7 +171,7 @@ footer {
   color: white;
   background-color: #7cbb02;
 }
-.second-footer-row a {
+.help a {
   position: fixed;
   bottom: 5vh;
   right: 5vw;
