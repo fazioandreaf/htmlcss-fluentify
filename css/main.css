@@ -7,6 +7,7 @@
 body{
   font-family:'Roboto',sans-serif ;
 }
+/* parte alta */
 header, section, footer {
   padding: 15px 10% ;
 }
@@ -38,11 +39,13 @@ nav ul li {
   margin: 0 5px;
   color: white;
 }
+/* funzione per mettere tutto in middle */
 .middle-nav, nav ul li {
   position: relative;
   top: 50%;
   transform: translate(0px, -50%);
 }
+/* classe dei bottoni della pagina */
 .bottoni {
   position: absolute;
   right: 0px;
@@ -56,6 +59,15 @@ nav ul li {
   margin: 0px 15px;
   border: 1px solid white;
 }
+.verde{
+  background-color: #7cbb02;
+}
+.help a {
+  position: fixed;
+  bottom: 5vh;
+  right: 5vw;
+}
+/* Titolo centrale */
 .titolo-pagina {
   position: absolute;
   display: inline-block;
@@ -70,9 +82,6 @@ nav ul li {
 .titolo-pagina a {
   padding: 20px 15px;
   font-size: 1.2;
-}
-.verde{
-  background-color: #7cbb02;
 }
 .bottone{
   text-transform: uppercase;
@@ -95,6 +104,7 @@ nav ul li {
 .intestazione span, .carta hr, .carta span, main section:last-child div span, .pulsanti-footer {
   color: #8e8e8e;
 }
+/* sezione carte */
 .row {
   border-bottom: 2px solid #8e8e8e;
 }
@@ -137,6 +147,7 @@ main section:last-child:after{
   display: table;
   clear: both;
 }
+/* parte bassa */
 footer {
   height: 100px;
   background-color: #d3d3d3;
@@ -170,9 +181,4 @@ footer {
   padding: 10px;
   color: white;
   background-color: #7cbb02;
-}
-.help a {
-  position: fixed;
-  bottom: 5vh;
-  right: 5vw;
 }
