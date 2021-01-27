@@ -130,8 +130,27 @@ main section:last-child:after{
 }
 footer {
   height: 100px;
-  background-color: yellow;
+  background-color: #d3d3d3;
 }
-footer h3{
-  display: inline-block;
+.first-footer-row::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+.first-footer-row>span {
+  font-size: 2em;
+  font-weight: bold;
+}
+.pulsanti-footer {
+  float:right;
+}
+.pulsanti-footer span {
+  text-transform: uppercase;
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+  background-color: #7cbb02;
+}
+.second-footer-row span {
+  float: right;
 }
