@@ -14,7 +14,7 @@ header {
   height: 100px;
   background-color: blue;
 }
-header ul li, header ul, .bottoni {
+header ul li, header ul, .bottoni, .pulsanti-footer{
   display: inline-block;
 }
 .intestazione {
@@ -48,3 +48,6 @@ footer {
   height: 100px;
   background-color: yellow;
   }
+footer h3{
+  display: inline-block;
+}
