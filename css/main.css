@@ -1,0 +1,29 @@
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body{
+  font-family:'Roboto',sans-serif ;
+}
+header {
+  height: 100px;
+  background-color: blue;
+}
+.intestazione {
+  height: 100px;
+  background-color: grey;
+}
+main section:nth-child(2) {
+  height: 100px;
+  background-color: red;
+}
+main section:last-child {
+  height: 100px;
+  background-color: green;
+  }
+footer {
+  height: 100px;
+  background-color: yellow;
+  }
