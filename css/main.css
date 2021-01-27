@@ -7,9 +7,15 @@
 body{
   font-family:'Roboto',sans-serif ;
 }
+header, section, footer {
+  padding: 0% 10% ;
+}
 header {
   height: 100px;
   background-color: blue;
+}
+header ul li, header ul, .bottoni {
+  display: inline-block;
 }
 .intestazione {
   height: 100px;
