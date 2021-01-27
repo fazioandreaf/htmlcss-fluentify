@@ -19,6 +19,10 @@ header {
   background-position: right bottom;
   background-repeat: no-repeat;
 }
+header a {
+  text-decoration: none;
+  color: white;
+}
 nav {
   position: relative;
   text-transform: uppercase;
@@ -43,9 +47,7 @@ nav * {
   padding: 10px;
 }
 .bottoni span:nth-child(2) {
-  padding: 10px;
   margin: 0px 15px;
-  border-radius: 5px;
   border: 1px solid white;
 }
 .titolo-pagina {
@@ -58,17 +60,18 @@ nav * {
 }
 .titolo-pagina h1 {
   color: white;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
-.bottone-verde{
+.titolo-pagina span {
+  padding: 20px 10px;
+}
+.verde{
+  background-color: #7cbb02;
+}
+.bottone{
   text-transform: uppercase;
   border-radius: 5px;
   padding: 10px;
-  color: white;
-  background-color: #7cbb02;
-}
-.bottone-verde a, nav a {
-  text-decoration: none;
   color: white;
 }
 .intestazione {
@@ -111,7 +114,7 @@ nav * {
   height: 100px;
 }
 .carta hr {
-  margin: 15px 40%;
+  margin: 30px 40%;
 }
 main section:last-child img {
   width: 46%;
