@@ -41,6 +41,9 @@ main section:last-child {
   height: 100px;
   background-color: green;
   }
+section img + div{
+  display: inline-block;
+}
 footer {
   height: 100px;
   background-color: yellow;
