@@ -83,11 +83,11 @@ nav * {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.intestazione span  {
+.intestazione span, .carta hr, .carta span, main section:last-child div span {
   color: #8e8e8e;
 }
 .row {
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid #8e8e8e;
 }
 .row::after{
   content: "";
@@ -113,12 +113,20 @@ nav * {
 .carta hr {
   margin: 15px 40%;
 }
-main section:last-child {
-  height: 100px;
-  background-color: green;
+main section:last-child img {
+  width: 46%;
+  margin: 2%;
 }
 section img + div{
   display: inline-block;
+  width: 45%;
+  margin: 2%;
+  float:right;
+}
+main section:last-child:after{
+  content: "";
+  display: table;
+  clear: both;
 }
 footer {
   height: 100px;
