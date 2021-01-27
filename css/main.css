@@ -8,14 +8,68 @@ body{
   font-family:'Roboto',sans-serif ;
 }
 header, section, footer {
-  padding: 0% 10% ;
+  padding: 10px 10% ;
 }
 header {
-  height: 100px;
-  background-color: blue;
+  position: relative;
+  height: 400px;
+  background-color: #0c325a;
+  background-image: url(../img/background-header.png);
+  background-size: 50%;
+  background-position: right bottom;
+  background-repeat: no-repeat;
 }
-header ul li, header ul, .bottoni, .pulsanti-footer{
+nav {
+  position: relative;
+  text-transform: uppercase;
+}
+nav ul li, nav ul, .pulsanti-footer{
   display: inline-block;
+}
+nav ul li {
+  margin: 0 5px;
+  color: white;
+}
+nav * {
+  vertical-align: bottom
+}
+.bottoni {
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translate(0, -10%);
+}
+.bottoni span:first-child {
+  padding: 10px;
+}
+.bottoni span:nth-child(2) {
+  padding: 10px;
+  margin: 0px 15px;
+  border-radius: 5px;
+  border: 1px solid white;
+}
+.titolo-pagina {
+  position: absolute;
+  display: inline-block;
+  width: 50%;
+  margin-top: 100px;
+  bottom: 0;
+  transform: translate(0, -50%);
+}
+.titolo-pagina h1 {
+  color: white;
+  margin-bottom: 20px;
+}
+.bottone-verde{
+  text-transform: uppercase;
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+  background-color: lightgreen;
+}
+.bottone-verde a, nav a {
+  text-decoration: none;
+  color: white;
 }
 .intestazione {
   text-align: center;
@@ -40,14 +94,14 @@ main section:nth-child(2) {
 main section:last-child {
   height: 100px;
   background-color: green;
-  }
+}
 section img + div{
   display: inline-block;
 }
 footer {
   height: 100px;
   background-color: yellow;
-  }
+}
 footer h3{
   display: inline-block;
 }
