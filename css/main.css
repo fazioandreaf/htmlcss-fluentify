@@ -8,7 +8,7 @@ body{
   font-family:'Roboto',sans-serif ;
 }
 header, section, footer {
-  padding: 10px 10% ;
+  padding: 15px 10% ;
 }
 header {
   position: relative;
@@ -97,9 +97,21 @@ nav * {
 .carta {
   float: left;
   width: calc(100%/3);
+  text-align: center;
 }
-main section:nth-child(2) {
-  background-color: red;
+.carta h4 {
+  height: 2em;
+  color: #7cbb02;
+}
+.carta:nth-child(2) h4 {
+  transform: translate(0, 25%);
+}
+.carta img {
+  margin: 15px;
+  height: 100px;
+}
+.carta hr {
+  margin: 15px 40%;
 }
 main section:last-child {
   height: 100px;
