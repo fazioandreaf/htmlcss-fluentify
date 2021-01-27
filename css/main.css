@@ -25,17 +25,23 @@ header a {
 }
 nav {
   position: relative;
+  height: 50px;
   text-transform: uppercase;
 }
 nav ul li, nav ul, .pulsanti-footer{
   display: inline-block;
 }
 nav ul li {
+  vertical-align: 25%;
+}
+nav ul li {
   margin: 0 5px;
   color: white;
 }
-nav * {
-  vertical-align: bottom
+.middle-nav, nav ul li {
+  position: relative;
+  top: 50%;
+  transform: translate(0px, -50%);
 }
 .bottoni {
   position: absolute;
@@ -43,10 +49,10 @@ nav * {
   top: 50%;
   transform: translate(0, -10%);
 }
-.bottoni span:first-child {
+.bottoni a:first-child {
   padding: 10px;
 }
-.bottoni span:nth-child(2) {
+.bottoni a:nth-child(2) {
   margin: 0px 15px;
   border: 1px solid white;
 }
@@ -54,16 +60,16 @@ nav * {
   position: absolute;
   display: inline-block;
   width: 50%;
-  margin-top: 100px;
-  bottom: 25%;
+  bottom: 20%;
   transform: translate(0, -50%);
 }
 .titolo-pagina h1 {
   color: white;
   margin-bottom: 30px;
 }
-.titolo-pagina span {
-  padding: 20px 10px;
+.titolo-pagina a {
+  padding: 20px 15px;
+  font-size: 1.2;
 }
 .verde{
   background-color: #7cbb02;
@@ -140,20 +146,24 @@ footer {
   display: table;
   clear: both;
 }
-.first-footer-row>span {
+.first-footer-row span {
   font-size: 2em;
   font-weight: bold;
+  float:left;
 }
 .pulsanti-footer {
   float:right;
 }
-.pulsanti-footer span {
+.pulsanti-footer a {
+  text-decoration: none;
   text-transform: uppercase;
   border-radius: 5px;
   padding: 10px;
   color: white;
   background-color: #7cbb02;
 }
-.second-footer-row span {
-  float: right;
+.second-footer-row a {
+  position: fixed;
+  bottom: 5vh;
+  right: 5vw;
 }
