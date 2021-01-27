@@ -22,8 +22,19 @@ header ul li, header ul, .bottoni {
   height: 100px;
   background-color: grey;
 }
+.row {
+  border-bottom: 2px solid black;
+}
+.row::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+.carta {
+  float: left;
+  width: calc(100%/3);
+}
 main section:nth-child(2) {
-  height: 100px;
   background-color: red;
 }
 main section:last-child {
